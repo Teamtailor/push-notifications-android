@@ -1,6 +1,6 @@
-# Push Notifications Android 
+# Push Notifications Android
 
-[![Build Status](https://www.bitrise.io/app/45610b9746e396f5/status.svg?token=OsxReMr5vbhXk7Y0wRuynQ&branch=master)](https://www.bitrise.io/app/45610b9746e396f5)
+[![Build Status](https://app.bitrise.io/app/45610b9746e396f5/status.svg?token=OsxReMr5vbhXk7Y0wRuynQ&branch=master)](https://www.bitrise.io/app/45610b9746e396f5)
 [![Twitter](https://img.shields.io/badge/twitter-@Pusher-blue.svg?style=flat)](http://twitter.com/Pusher)
 
 This is the Android SDK for the [Pusher Beams](https://pusher.com/beams) service.
@@ -19,7 +19,7 @@ buildscript {
 
     dependencies {
         // Add this line
-        classpath 'com.google.gms:google-services:4.0.1'
+        classpath 'com.google.gms:google-services:4.2.0'
     }
 }
 ```
@@ -31,14 +31,18 @@ dependencies {
     ...
 
     // Add these lines
-    implementation 'com.google.firebase:firebase-core:16.0.1'
-    implementation 'com.google.firebase:firebase-messaging:17.1.0'
-    implementation 'com.pusher:push-notifications-android:1.4.0'
+    implementation 'com.google.firebase:firebase-core:16.0.9'
+    implementation 'com.google.firebase:firebase-messaging:18.0.0'
+    implementation 'com.pusher:push-notifications-android:1.6.2'
 }
 
 // Add this line to the end of the file
 apply plugin: 'com.google.gms.google-services'
 ```
+
+## Release Process
+
+Available for Pusher folks only: Search on the manual for Beams SDK Release Process
 
 ## Documentation
 

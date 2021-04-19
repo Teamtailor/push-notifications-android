@@ -6,6 +6,60 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.6.2] - 2020-01-27
+
+### Fixed
+- Make sure proguard does not interfere with offline job persistence
+
+## [1.6.1] - 2020-01-27
+
+### Fixed
+- Don't crash on initialisation if the application manifest contains no metadata whatsoever.
+
+## [1.6.0] - 2020-01-08
+
+### Fixed
+- Fix #100 by updating our [moshi dependency](https://github.com/square/moshi) to 1.9. If you use moshi you will also need to upgrade to 1.9 before updating beams.
+
+## [1.5.1] - 2019-12-02
+
+### Fixed
+- Fix an issue if the instanceId isn't present when reporting a push notification event
+
+## [1.5.0] - 2019-11-13
+
+### Added
+- Support for multiple instances in the same application
+
+## [1.4.6] - 2019-11-01
+
+### Changed
+- Better error handling when User already has too many devices
+- Better error messages for when server rejects requests
+
+## [1.4.5] - 2019-09-05
+- Fix issue #86 Prevent Beams files and shared preferences from being auto backed up
+
+## [1.4.4] - 2019-07-30
+
+### Fixed
+- Fix issue #85 JsonEncodingException when loading stored pending operations
+
+## [1.4.3] - 2019-06-07
+
+### Changed
+- Update persistent storage layer to use JSON
+
+## [1.4.2] - 2019-05-31
+
+### Fixed
+- Fix issue #77 Invalid Class Exceptions in Tape
+
+## [1.4.1] - 2019-05-24
+
+### Fixed
+- Improved support for future versions of Firebase
+
 ## [1.4.0] - 2019-03-26
 
 ### Added
@@ -82,7 +136,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
  - Support for initial interest set, which enables migration from 3rd-party services
  - Implemented `setOnSubscriptionsChangedListener` which allows user to register a callback when subscriptions change
- 
+
 
 ## [0.10.0] - 2018-04-23
 
